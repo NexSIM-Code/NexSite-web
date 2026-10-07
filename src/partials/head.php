@@ -18,6 +18,11 @@ $noindex = $noindex ?? false;
 $langMeta = nexsim_lang_meta();
 $alternates = nexsim_alternates($canonical);
 
+$requestedLang = $_GET['lang'] ?? null;
+if (nexsim_is_supported($requestedLang)) {
+    $canonical = $alternates[NEXSIM_LANGS[strtolower($requestedLang)]['hreflang']];
+}
+
 /* Chaînes nécessaires au JavaScript : le panneau des modules et le bouton de thème
    sont pilotés côté client et doivent suivre la langue de la page. */
 $jsI18n = [

@@ -23,6 +23,7 @@
 # bien mod_filter qu'il faut tester ici, sans quoi la directive passe le garde et
 # renvoie une erreur 500 sur chaque requête là où mod_filter est absent.
 <IfModule mod_filter.c>
+<IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
     # text/javascript et application/javascript désignent tous deux du JS selon
     # la version d'Apache : les deux sont listés pour que la compression
@@ -31,6 +32,7 @@
     AddOutputFilterByType DEFLATE image/svg+xml
     # Images, polices et vidéos sont déjà compressées : les repasser en gzip ne
     # ferait que consommer du processeur.
+</IfModule>
 </IfModule>
 
 # ------------------------------------------------------------------- Cache ---
@@ -100,11 +102,36 @@
 #   politique-cookies.php        → fondue dans la politique de confidentialité
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteRule ^lusim\.php$                     /#physique [R=301,L,NE]
-    RewriteRule ^contact\.php$                   /#contact [R=301,L,NE]
-    RewriteRule ^equipe\.php$                    /#equipe [R=301,L,NE]
-    RewriteRule ^politique-confidentialite\.php$ /politique-de-confidentialite.php [R=301,L]
-    RewriteRule ^politique-cookies\.php$         /politique-de-confidentialite.php [R=301,L]
+    RewriteCond %{QUERY_STRING} ^$
+    RewriteRule ^lusim\.php$                     https://www.nexsim.fr/#physique [R=301,L,NE]
+    RewriteRule ^lusim\.php$                     https://www.nexsim.fr/?%{QUERY_STRING}#physique [R=301,L,NE,QSD]
+    RewriteCond %{QUERY_STRING} ^$
+    RewriteRule ^contact\.php$                   https://www.nexsim.fr/#contact [R=301,L,NE]
+    RewriteRule ^contact\.php$                   https://www.nexsim.fr/?%{QUERY_STRING}#contact [R=301,L,NE,QSD]
+    RewriteCond %{QUERY_STRING} ^$
+    RewriteRule ^equipe\.php$                    https://www.nexsim.fr/#equipe [R=301,L,NE]
+    RewriteRule ^equipe\.php$                    https://www.nexsim.fr/?%{QUERY_STRING}#equipe [R=301,L,NE,QSD]
+    RewriteRule ^politique-confidentialite\.php$ https://www.nexsim.fr/politique-de-confidentialite.php [R=301,L]
+    RewriteRule ^politique-cookies\.php$         https://www.nexsim.fr/politique-de-confidentialite.php [R=301,L]
+</IfModule>
+
+# ------------------------------------------------------- Adresse canonique ---
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # /index.php → / ; THE_REQUEST ne voit que l'adresse demandée par le client,
+    # pas la réécriture interne de DirectoryIndex, ce qui évite une boucle.
+    RewriteCond %{HTTP_HOST} ^(www\.)?nexsim\.fr$ [NC]
+    RewriteCond %{THE_REQUEST} \s/index\.php[\s?]
+    RewriteRule ^index\.php$ https://www.nexsim.fr/ [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^nexsim\.fr$ [NC]
+    RewriteRule ^(.*)$ https://www.nexsim.fr/$1 [R=301,L,NE]
+
+    RewriteCond %{HTTP_HOST} ^www\.nexsim\.fr$ [NC]
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https [NC]
+    RewriteRule ^(.*)$ https://www.nexsim.fr/$1 [R=301,L,NE]
 </IfModule>
 
 # ------------------------------------------------------------- Erreur 404 ---

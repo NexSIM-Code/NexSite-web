@@ -135,7 +135,7 @@ include __DIR__ . '/partials/head.php';
                             'name' => t('jsonld.video.name'),
                             'description' => t('jsonld.video.description'),
                             'thumbnailUrl' => 'https://www.nexsim.fr/videos/poster.jpg',
-                            'uploadDate' => '2025-12-08',
+                            'uploadDate' => '2025-12-08T00:00:00+01:00', // ISO 8601 avec fuseau : exigé par Google
                             'duration' => 'PT1M1S',
                             'contentUrl' => 'https://www.nexsim.fr/videos/Lusim_V10.mp4',
                             'width' => 1920,
