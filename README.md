@@ -5,8 +5,8 @@ de la société, du simulateur respiratoire LuSIM (modèle 3D interactif), de la
 « Nex » et de l'équipe, plus les pages légales (mentions légales, politique de confidentialité
 de NexControl, NexHome et NexStore-web).
 
-Le site est en PHP sans framework ni base de données : pages rendues côté serveur, trois
-langues (FR / EN / DE / IT), thème clair ou foncé mémorisé par cookie.
+Le site est en PHP sans framework ni base de données : pages rendues côté serveur, cinq
+langues (FR / EN / DE / IT / ES), thème clair ou foncé mémorisé par cookie.
 
 > Le site ne publie **aucun prix, offre d'achat ni donnée de production**, y compris dans les
 > données structurées : LuSIM est déclaré en `Brand` rattaché à l'`Organization`, jamais en
@@ -23,7 +23,7 @@ src/                         # racine web : exactement ce qui part en production
 ├── .htaccess                # cache, compression, types MIME : fait foi en production
 ├── includes/                # bootstrap, i18n, cookies, images (<picture>), modules 3D
 ├── partials/                # head, header, footer
-├── lang/{fr,en,de,it}.php   # dictionnaires (en = langue de repli)
+├── lang/{fr,en,de,it,es}.php # dictionnaires (en = langue de repli)
 ├── css/  scripts/  fonts/   # style.css, animations.js, Rubik en woff2
 ├── image/                   # originaux (image/opt/ est généré, non versionné)
 ├── modeles/lusim.glb        # modèle 3D du LuSIM

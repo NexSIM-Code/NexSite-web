@@ -23,6 +23,7 @@ const NEXSIM_LANGS = [
     'en' => ['label' => 'English',  'short' => 'EN', 'hreflang' => 'en', 'locale' => 'en_GB'],
     'de' => ['label' => 'Deutsch',  'short' => 'DE', 'hreflang' => 'de', 'locale' => 'de_DE'],
     'it' => ['label' => 'Italiano', 'short' => 'IT', 'hreflang' => 'it', 'locale' => 'it_IT'],
+    'es' => ['label' => 'Español',  'short' => 'ES', 'hreflang' => 'es', 'locale' => 'es_ES'],
 ];
 
 /** @var array<string,string> Dictionnaire actif, fusionné sur la langue de repli. */
