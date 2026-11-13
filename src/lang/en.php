@@ -233,7 +233,7 @@ return [
     'privacy.s2.store.li2' => '<strong>Audit log.</strong> Date, account, action (login, account management, rescue codes, adding, updating or deleting an application, tablet registration) and IP address. Purpose: security and traceability of actions. Legal basis: legitimate interest.',
     'privacy.s2.store.li3' => '<strong>Application history.</strong> For each application file uploaded: version, date and uploader (name and e-mail address). Purpose: knowing who published each version distributed to the tablets. Legal basis: legitimate interest.',
     'privacy.s2.store.li4' => '<strong>Service e-mails.</strong> Invitations and password reset links, sent to the account\'s address.',
-    'privacy.s2.store.li5' => '<strong>Cookies.</strong> A strictly necessary session cookie keeps you logged in; a preference cookie remembers the language you chose (French, English or German). See section 5.',
+    'privacy.s2.store.li5' => '<strong>Cookies.</strong> A strictly necessary session cookie keeps you logged in; a preference cookie remembers the language you chose (French, English, German or Italian). See section 5.',
 
     'privacy.s3.title' => '3. Retention periods',
     'privacy.s3.li1' => 'E-mail exchanges: as long as needed to handle the request, then at most three years from the last contact if no contractual relationship is established.',
@@ -258,7 +258,7 @@ return [
     'privacy.cookies.th.purpose' => 'Purpose',
     'privacy.cookies.th.duration' => 'Lifetime',
     'privacy.cookies.th.basis' => 'Legal basis',
-    'privacy.cookies.lang.purpose' => 'Stores the display language you selected (fr, en or de).',
+    'privacy.cookies.lang.purpose' => 'Stores the display language you selected (fr, en, de or it).',
     'privacy.cookies.theme.purpose' => 'Stores the theme you selected (light or dark).',
     'privacy.cookies.duration' => '12 months',
     'privacy.cookies.basis' => 'Exempt from consent',

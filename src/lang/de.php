@@ -233,7 +233,7 @@ return [
     'privacy.s2.store.li2' => '<strong>Audit-Protokoll.</strong> Datum, Konto, Aktion (Anmeldung, Kontenverwaltung, Notfallcodes, Hinzufügen, Aktualisieren oder Löschen einer Anwendung, Registrierung eines Tablets) und IP-Adresse. Zweck: Sicherheit und Nachvollziehbarkeit der Aktionen. Rechtsgrundlage: berechtigtes Interesse.',
     'privacy.s2.store.li3' => '<strong>Anwendungsverlauf.</strong> Für jede hochgeladene Anwendungsdatei: Version, Datum und Urheber (Name und E-Mail-Adresse). Zweck: nachvollziehen, wer jede an die Tablets verteilte Version veröffentlicht hat. Rechtsgrundlage: berechtigtes Interesse.',
     'privacy.s2.store.li4' => '<strong>Dienst-E-Mails.</strong> Einladungen und Links zum Zurücksetzen des Passworts, gesendet an die Adresse des Kontos.',
-    'privacy.s2.store.li5' => '<strong>Cookies.</strong> Ein unbedingt erforderliches Sitzungs-Cookie hält die Anmeldung aufrecht; ein Präferenz-Cookie speichert die gewählte Sprache (Französisch, Englisch oder Deutsch). Siehe Abschnitt 5.',
+    'privacy.s2.store.li5' => '<strong>Cookies.</strong> Ein unbedingt erforderliches Sitzungs-Cookie hält die Anmeldung aufrecht; ein Präferenz-Cookie speichert die gewählte Sprache (Französisch, Englisch, Deutsch oder Italienisch). Siehe Abschnitt 5.',
 
     'privacy.s3.title' => '3. Speicherfristen',
     'privacy.s3.li1' => 'E-Mail-Korrespondenz: so lange, wie es zur Bearbeitung der Anfrage erforderlich ist, danach höchstens drei Jahre ab dem letzten Kontakt, sofern keine Vertragsbeziehung zustande kommt.',
@@ -258,7 +258,7 @@ return [
     'privacy.cookies.th.purpose' => 'Zweck',
     'privacy.cookies.th.duration' => 'Laufzeit',
     'privacy.cookies.th.basis' => 'Rechtsgrundlage',
-    'privacy.cookies.lang.purpose' => 'Speichert die von Ihnen gewählte Anzeigesprache (fr, en oder de).',
+    'privacy.cookies.lang.purpose' => 'Speichert die von Ihnen gewählte Anzeigesprache (fr, en, de oder it).',
     'privacy.cookies.theme.purpose' => 'Speichert das von Ihnen gewählte Design (hell oder dunkel).',
     'privacy.cookies.duration' => '12 Monate',
     'privacy.cookies.basis' => 'Einwilligungsfrei',
