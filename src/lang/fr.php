@@ -59,7 +59,7 @@ return [
     'module.compliance.label' => 'Compliance',
     'module.compliance.title' => 'Module de Compliance',
     'module.compliance.desc' => "Modifie l'élasticité du poumon artificiel pour reproduire des pathologies alvéolaires aboutissant à des troubles de la compliance rencontrées fréquemment en milieu hospitalier.",
-    'module.compliance.p1' => 'Possibilité d’un panel large de pathologies avec atteintes uni ou bilatérales des champs pulmonaires (SDRA, atélectasies, pneumothorax…)',
+    'module.compliance.p1' => 'Possibilité d’un panel large de pathologies avec atteintes uni- ou bilatérales des champs pulmonaires (SDRA, atélectasies, pneumothorax…)',
     'module.compliance.p2' => 'Réglage continu de la compliance pulmonaire, avec une représentation des courbes proche de la physiopathologie humaine',
     'module.compliance.p3' => 'Modification de la pression plateau, de la pression motrice et de la PEP intrinsèque en direct',
 
@@ -233,7 +233,7 @@ return [
     'privacy.s2.store.li2' => '<strong>Journal d\'audit.</strong> Date, compte, action (connexion, gestion des comptes, codes de secours, ajout, mise à jour ou suppression d\'une application, enregistrement d\'une tablette) et adresse IP. Finalité : sécurité et traçabilité des actions. Base légale : intérêt légitime.',
     'privacy.s2.store.li3' => '<strong>Historique des applications.</strong> Pour chaque fichier d\'application envoyé : version, date et auteur (nom et adresse e-mail). Finalité : savoir qui a publié chaque version distribuée aux tablettes. Base légale : intérêt légitime.',
     'privacy.s2.store.li4' => '<strong>E-mails de service.</strong> Invitations et liens de réinitialisation du mot de passe, envoyés à l\'adresse du compte.',
-    'privacy.s2.store.li5' => '<strong>Cookies.</strong> Un cookie de session, strictement nécessaire, maintient la connexion ; un cookie de préférence mémorise la langue choisie (français ou anglais). Voir la section 5.',
+    'privacy.s2.store.li5' => '<strong>Cookies.</strong> Un cookie de session, strictement nécessaire, maintient la connexion ; un cookie de préférence mémorise la langue choisie (français, anglais ou allemand). Voir la section 5.',
 
     'privacy.s3.title' => '3. Durées de conservation',
     'privacy.s3.li1' => "Échanges par e-mail : durée nécessaire au traitement de la demande, puis au maximum trois ans à compter du dernier contact si aucune relation contractuelle n'est établie.",
